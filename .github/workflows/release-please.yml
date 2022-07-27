@@ -41,7 +41,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./docs
 
-      - run: yarn publish
+      - run: yarn publish --access=public
         env:
           NODE_AUTH_TOKEN: ${{secrets.TELOSTAT_NPM_TOKEN}}
         if: ${{ steps.release.outputs.release_created }}
