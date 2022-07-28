@@ -15,11 +15,15 @@
   "module": "./dist/index.module.js",
   "unpkg": "./dist/index.umd.js",
   "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "rm -rf dist/ && microbundle && yarn make:docs",
     "dev": "microbundle --watch",
     "make:docs": "typedoc",
-    "deploy:docs": "gh-pages -d ./docs"
+    "deploy:docs": "gh-pages -d ./docs",
+    "prepare": "yarn build"
   },
   "engines": {
     "node": ">=10",
