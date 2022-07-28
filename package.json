@@ -69,6 +69,7 @@
     ]
   },
   "dependencies": {
+    "dayjs": "^1.11.4",
     "decimal.js": "^10.3.1",
     "purify-ts": "^1.2.2"
   }
