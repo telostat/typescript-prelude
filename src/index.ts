@@ -1,3 +1,5 @@
+export * from './-decimal';
+export * as decimal from './-decimal';
 export * from './-newtype';
 export * as newtype from './-newtype';
 export * from './-purify';
