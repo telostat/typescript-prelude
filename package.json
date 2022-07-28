@@ -68,5 +68,7 @@
       "@commitlint/config-conventional"
     ]
   },
-  "dependencies": {}
+  "dependencies": {
+    "purify-ts": "^1.2.2"
+  }
 }
