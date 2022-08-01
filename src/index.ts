@@ -1,8 +1,12 @@
-export * from './-zeitgeist';
-export * as zeitgeist from './-zeitgeist';
 export * from './-decimal';
 export * as decimal from './-decimal';
+export * from './-error';
+export * as error from './-error';
 export * from './-newtype';
 export * as newtype from './-newtype';
 export * from './-purify';
 export * as purify from './-purify';
+export * from './-text';
+export * as text from './-text';
+export * from './-zeitgeist';
+export * as zeitgeist from './-zeitgeist';
