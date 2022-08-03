@@ -6,9 +6,9 @@ export const PDateTime = dayjs;
 /**
  * Type alias for ISO-formatted date values as strings.
  */
-export type SDate = 'string';
+export type SDate = string;
 
 /**
  * Type alias for ISO-formatted date/time values as strings.
  */
-export type SDateTime = 'string';
+export type SDateTime = string;
