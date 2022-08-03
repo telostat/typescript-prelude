@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.1](https://github.com/telostat/typescript-prelude/compare/v0.1.0...v0.1.1) (2022-08-03)
+
+
+### Bug Fixes
+
+* types are broken for SDate and SDateTime ([0447159](https://github.com/telostat/typescript-prelude/commit/044715944c55b772c07e81381b35c9418bf6bf22))
+
 ## [0.1.0](https://github.com/telostat/typescript-prelude/compare/v0.0.2...v0.1.0) (2022-08-01)
 
 
