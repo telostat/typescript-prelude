@@ -37,7 +37,7 @@ export function safeDiv(x: any, y: any): Maybe<any> {
   if (typeof x === 'number') {
     return y === 0 ? Nothing : Just(x / y);
   } else {
-    return y.isZero() ? Nothing : Just(x.dividedBy(x));
+    return y.isZero() ? Nothing : Just(x.dividedBy(y));
   }
 }
 
