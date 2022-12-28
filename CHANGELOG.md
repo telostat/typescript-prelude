@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.2](https://github.com/telostat/typescript-prelude/compare/v0.1.1...v0.1.2) (2022-12-28)
+
+
+### Bug Fixes
+
+* fix safeDiv implementation ([a6d3ccd](https://github.com/telostat/typescript-prelude/commit/a6d3ccd0dc06b1580b4efe917bbd815ebd140c66))
+
 ## [0.1.1](https://github.com/telostat/typescript-prelude/compare/v0.1.0...v0.1.1) (2022-08-03)
 
 
