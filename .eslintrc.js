@@ -19,5 +19,6 @@ module.exports = {
     '@typescript-eslint/explicit-function-return-type': 'off',
     'no-use-before-define': 'off',
     '@typescript-eslint/no-use-before-define': ['error'],
+    'no-unused-vars': 'off',
   },
 };
