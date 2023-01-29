@@ -1,5 +1,31 @@
 # Changelog
 
+## [1.0.0](https://github.com/telostat/typescript-prelude/compare/v0.1.2...v1.0.0) (2023-01-29)
+
+
+### ⚠ BREAKING CHANGES
+
+* We have refactored the names AND the semantics of our finite, arbitrary precision number constructors.
+* drop newtype module
+* Adjective usage is more proper than noun usage. Also, this module will eventually introduce more definitions which are not coming from purify.ts.
+* Adjective usage is more proper than noun usage, like that we are using numeric for the module that deals with numbers and textual for the module that deals with texts.
+* Adjective usage is more proper than noun usage, like that we are using numeric for the module that deals with numbers.
+* decimal module did not have exlusively `Decimal` related definitions. Therefore, the module is renamed to numeric.
+
+### Features
+
+* improve temporal module ([3b344ae](https://github.com/telostat/typescript-prelude/commit/3b344ae6828c32567f6975a653908a28aa436c69))
+
+
+### Code Refactoring
+
+* drop newtype module ([b1b5d7b](https://github.com/telostat/typescript-prelude/commit/b1b5d7bc1b3644375cf37f62b186f289e06e2267))
+* refactor finite, arbitrary precision number constructors ([59cfdd7](https://github.com/telostat/typescript-prelude/commit/59cfdd7339c2fe639dc2294b7bf81aa346c24a0f))
+* rename decimal module to numeric ([1cbe070](https://github.com/telostat/typescript-prelude/commit/1cbe07028be86cdab24a0d0b0df2f7ccac07caf9))
+* rename purify module to functional ([f6509f7](https://github.com/telostat/typescript-prelude/commit/f6509f77e50470a0d4f157eeab43c05b2614139a))
+* rename text module to textual ([118fa9f](https://github.com/telostat/typescript-prelude/commit/118fa9f785db90a2923a7b28db20fdce056c143a))
+* rename zeitgeist module to temporal ([9fb015d](https://github.com/telostat/typescript-prelude/commit/9fb015dfeb088021e26f6fe3e5555eabb302fbba))
+
 ## [0.1.2](https://github.com/telostat/typescript-prelude/compare/v0.1.1...v0.1.2) (2022-12-28)
 
 
