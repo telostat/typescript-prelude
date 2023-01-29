@@ -6,7 +6,7 @@
  */
 
 import { Decimal } from 'decimal.js';
-import { Just, Maybe, Nothing } from './-purify';
+import { Just, Maybe, Nothing } from './-functional';
 
 export * from 'decimal.js';
 
@@ -45,8 +45,8 @@ export function safeDiv(x: Decimal, y: Decimal): Maybe<Decimal>;
  *
  * @param x Dividend.
  * @param y Divisor.
- * @returns {@link purify!Just} quotient if divisor is non-zero,
- * {@link purify!Nothing} otherwise.
+ * @returns {@link functional!Just} quotient if divisor is non-zero,
+ * {@link functional!Nothing} otherwise.
  */
 export function safeDiv(x: any, y: any): Maybe<any> {
   if (typeof x === 'number') {
@@ -72,8 +72,8 @@ export function asDecimal(x: number): Decimal {
  * {@link Decimal:class} value.
  *
  * @param x A nullable-value to convert to {@link Decimal:class}.
- * @returns {@link purify!Just} {@link Decimal:class} if argument is a valid
- * numeric value, {@link purify!Nothing} otherwise.
+ * @returns {@link functional!Just} {@link Decimal:class} if argument is a valid
+ * numeric value, {@link functional!Nothing} otherwise.
  */
 export function maybeDecimal(x: number | undefined | null): Maybe<Decimal> {
   return Maybe.fromNullable(x).map((n) => new Decimal(n));

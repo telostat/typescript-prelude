@@ -4,7 +4,7 @@
  * @module
  */
 
-import { Maybe } from './-purify';
+import { Maybe } from './-functional';
 
 /**
  * Sanitizes given text value.
@@ -20,8 +20,8 @@ export function sanitizeText(x: string): string {
  * Returns a non-empty text value for the given nullable textual argument.
  *
  * @param x A nullable text value.
- * @returns {@link purify!Just} text value if the argument is non-null and
- * non-empty, {@link purify!Nothing} otherwise.
+ * @returns {@link functional!Just} text value if the argument is non-null and
+ * non-empty, {@link functional!Nothing} otherwise.
  */
 export function nonEmptyText(x: string | null | undefined): Maybe<string> {
   return Maybe.fromNullable(x).filter((t) => t !== '');
@@ -32,8 +32,9 @@ export function nonEmptyText(x: string | null | undefined): Maybe<string> {
  * argument.
  *
  * @param x A nullable text value.
- * @returns {@link purify!Just} sanitized text value if the argument is non-null
- * and non-empty after sanitization, {@link purify!Nothing} otherwise.
+ * @returns {@link functional!Just} sanitized text value if the argument is
+ * non-null and non-empty after sanitization, {@link functional!Nothing}
+ * otherwise.
  */
 export function sanitizedNonEmptyText(x: string | null | undefined): Maybe<string> {
   return Maybe.fromNullable(x)

@@ -1,11 +1,11 @@
 export * from './-error';
 export * as error from './-error';
+export * from './-functional';
+export * as functional from './-functional';
 export * from './-newtype';
 export * as newtype from './-newtype';
 export * from './-numeric';
 export * as numeric from './-numeric';
-export * from './-purify';
-export * as purify from './-purify';
 export * from './-temporal';
 export * as temporal from './-temporal';
 export * from './-textual';

@@ -1,5 +1,5 @@
 import { Just as PurifyJust, Nothing as PurifyNothing } from 'purify-ts';
-import { Just, Nothing } from './-purify';
+import { Just, Nothing } from './-functional';
 
 describe('re-export purify.ts', () => {
   test('imports and exports purify.ts definitions properly', () => {
