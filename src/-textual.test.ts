@@ -1,5 +1,5 @@
 import { Just, Nothing } from 'purify-ts';
-import { nonEmptyText, sanitizedNonEmptyText, sanitizeText } from './-text';
+import { nonEmptyText, sanitizedNonEmptyText, sanitizeText } from './-textual';
 
 describe('sanitize text', () => {
   test('empty sanitized text is empty text', () => {
