@@ -22,6 +22,12 @@ Quick commands:
     yarn dev
     ```
 
+- Run tests:
+
+    ```sh
+    yarn test
+    ```
+
 - Build the documentation:
 
     ```sh
