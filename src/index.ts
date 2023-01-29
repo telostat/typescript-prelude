@@ -1,9 +1,9 @@
-export * from './-decimal';
-export * as decimal from './-decimal';
 export * from './-error';
 export * as error from './-error';
 export * from './-newtype';
 export * as newtype from './-newtype';
+export * from './-numeric';
+export * as numeric from './-numeric';
 export * from './-purify';
 export * as purify from './-purify';
 export * from './-text';
