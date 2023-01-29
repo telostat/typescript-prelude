@@ -1,4 +1,4 @@
-import { PDateTime } from './-zeitgeist';
+import { PDateTime } from './-temporal';
 
 describe('PDateTime is dayjs', () => {
   test('today is today', () => {
