@@ -1,3 +1,10 @@
+/**
+ * This module re-exports `dayjs` definition and provides definitions for
+ * working with temporal values.
+ *
+ * @module
+ */
+
 import dayjs from 'dayjs';
 
 // TODO: Check how we can export Day.js type and functionality.
