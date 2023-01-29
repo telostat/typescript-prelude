@@ -2,8 +2,6 @@ export * from './-error';
 export * as error from './-error';
 export * from './-functional';
 export * as functional from './-functional';
-export * from './-newtype';
-export * as newtype from './-newtype';
 export * from './-numeric';
 export * as numeric from './-numeric';
 export * from './-temporal';
