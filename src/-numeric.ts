@@ -72,6 +72,18 @@ export function decimal(x: number | string): Maybe<Decimal> {
 }
 
 /**
+ * Smart constructor that allows `undefined` and `null` as argument.
+ *
+ * @param x The value to convert to {@link Decimal:class}.
+ * @returns {@link functional!Just} finite {@link Decimal:class} value if
+ * argument is a valid, finite numeric value, {@link functional!Nothing}
+ * otherwise.
+ */
+export function decimalFromNullable(x: number | string | undefined | null): Maybe<Decimal> {
+  return Maybe.fromNullable(x).chain(decimal);
+}
+
+/**
  * Unsafe constructor for arbitrary precision numeric values.
  *
  * This uses {@link decimal} function underneath and throws a

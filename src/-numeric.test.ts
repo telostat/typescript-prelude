@@ -32,6 +32,24 @@ describe('Arbitrary precision numbers', () => {
     expect(N.decimal(' \n\t\r 1 \n\t\r ')).toStrictEqual(Just(N.one));
   });
 
+  test('tolerating smart constructor is also smart', () => {
+    expect(N.decimalFromNullable(NaN)).toBe(Nothing);
+    expect(N.decimalFromNullable(Infinity)).toBe(Nothing);
+    expect(N.decimalFromNullable(-Infinity)).toBe(Nothing);
+    expect(N.decimalFromNullable('NaN')).toBe(Nothing);
+    expect(N.decimalFromNullable('Infinity')).toBe(Nothing);
+    expect(N.decimalFromNullable('-Infinity')).toBe(Nothing);
+    expect(N.decimalFromNullable('')).toBe(Nothing);
+    expect(N.decimalFromNullable(' ')).toBe(Nothing);
+    expect(N.decimalFromNullable(' \n\t\r \n\t\r ')).toBe(Nothing);
+    expect(N.decimalFromNullable(null)).toBe(Nothing);
+    expect(N.decimalFromNullable(undefined)).toBe(Nothing);
+
+    expect(N.decimalFromNullable(1)).toStrictEqual(Just(N.one));
+    expect(N.decimalFromNullable('1')).toStrictEqual(Just(N.one));
+    expect(N.decimalFromNullable(' \n\t\r 1 \n\t\r ')).toStrictEqual(Just(N.one));
+  });
+
   test('unsafe constructor tries to be smart', () => {
     expect(() => N.unsafeDecimal(NaN)).toThrow(/^Not a valid, finite numeric value: NaN$/);
     expect(() => N.unsafeDecimal(Infinity)).toThrow(/^Not a valid, finite numeric value: Infinity$/);
