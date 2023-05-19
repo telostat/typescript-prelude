@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.3.0](https://github.com/telostat/typescript-prelude/compare/v0.2.0...v0.3.0) (2023-05-19)
+
+
+### ⚠ BREAKING CHANGES
+
+* make minimum supported node version 16
+
+### Miscellaneous Chores
+
+* make minimum supported node version 16 ([846da38](https://github.com/telostat/typescript-prelude/commit/846da38dccff4a5912acd5bd8aef563d5ce40ea4))
+
 ## [0.2.0](https://github.com/telostat/typescript-prelude/compare/v0.1.2...v0.2.0) (2023-01-31)
 
 
