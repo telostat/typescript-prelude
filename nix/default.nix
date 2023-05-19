@@ -31,7 +31,6 @@ let
   ## Declare dependencies for our shell:
   deps = [
     pkgs.nodejs
-    pkgs.yarn
 
     devshell
   ];

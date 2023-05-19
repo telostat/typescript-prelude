@@ -13,31 +13,31 @@ Quick commands:
 - Build the library and documentation:
 
     ```sh
-    yarn build
+    npm run build
     ```
 
 - Build as you develop:
 
     ```sh
-    yarn dev
+    npm run dev
     ```
 
 - Run tests:
 
     ```sh
-    yarn test
+    npm run test
     ```
 
 - Build the documentation:
 
     ```sh
-    yarn make:docs
+    npm run make:docs
     ```
 
 - Deploy documentation:
 
     ```sh
-    yarn deploy:docs
+    npm run deploy:docs
     ```
 
 [telosnix]: https://github.com/telostat/telos.nix
