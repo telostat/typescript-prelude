@@ -7,15 +7,21 @@
 
 import dayjs, { Dayjs } from 'dayjs';
 import customParseFormat from 'dayjs/plugin/customParseFormat';
+import duration from 'dayjs/plugin/duration';
 import isoWeek from 'dayjs/plugin/isoWeek';
+import minMax from 'dayjs/plugin/minMax';
 import quarterOfYear from 'dayjs/plugin/quarterOfYear';
+import relativeTime from 'dayjs/plugin/relativeTime';
 import timezone from 'dayjs/plugin/timezone';
 import utc from 'dayjs/plugin/utc';
 
 // Extend dayjs:
 dayjs.extend(customParseFormat);
+dayjs.extend(duration);
 dayjs.extend(isoWeek);
+dayjs.extend(minMax);
 dayjs.extend(quarterOfYear);
+dayjs.extend(relativeTime);
 dayjs.extend(timezone);
 dayjs.extend(utc);
 
