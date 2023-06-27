@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.1](https://github.com/telostat/typescript-prelude/compare/v0.3.0...v0.3.1) (2023-06-27)
+
+
+### Features
+
+* add new plugins to dayjs instances ([42d77fd](https://github.com/telostat/typescript-prelude/commit/42d77fd11c3f03c19446fd267ac00a439d6ad501))
+
 ## [0.3.0](https://github.com/telostat/typescript-prelude/compare/v0.2.0...v0.3.0) (2023-05-19)
 
 
