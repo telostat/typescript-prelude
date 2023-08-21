@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.1](https://github.com/telostat/typescript-prelude/compare/v0.4.0...v0.4.1) (2023-08-21)
+
+
+### Bug Fixes
+
+* wrong version tag for dayjs ([e6d7b3d](https://github.com/telostat/typescript-prelude/commit/e6d7b3dbe9510c3af75ab107644f33a2172b953c))
+
 ## [0.4.0](https://github.com/telostat/typescript-prelude/compare/v0.3.1...v0.4.0) (2023-08-21)
 
 
