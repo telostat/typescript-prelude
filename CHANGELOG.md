@@ -1,5 +1,21 @@
 # Changelog
 
+## [0.4.0](https://github.com/telostat/typescript-prelude/compare/v0.3.1...v0.4.0) (2023-08-21)
+
+
+### ⚠ BREAKING CHANGES
+
+* do not export dayjs and make it peer dependency
+
+### Bug Fixes
+
+* iso date format has wrong letter for seconds ([7810858](https://github.com/telostat/typescript-prelude/commit/78108589de427330aac3fe47f15830e3cd02e7a6))
+
+
+### Code Refactoring
+
+* do not export dayjs and make it peer dependency ([8d22491](https://github.com/telostat/typescript-prelude/commit/8d224919a98ceb3e1337a87c20166381c0ada46f))
+
 ## [0.3.1](https://github.com/telostat/typescript-prelude/compare/v0.3.0...v0.3.1) (2023-06-27)
 
 
