@@ -25,9 +25,6 @@ dayjs.extend(relativeTime);
 dayjs.extend(timezone);
 dayjs.extend(utc);
 
-// TODO: Check how we can export Day.js type and functionality.
-export const PDateTime = dayjs;
-
 /**
  * Type alias for ISO-formatted date values as strings.
  */
@@ -49,7 +46,7 @@ export interface SDateRange {
 /**
  * ISO date/time format used in the library.
  */
-export const isoFormatDateTime = 'YYYY-MM-DDTHH:MM:SS';
+export const isoFormatDateTime = 'YYYY-MM-DDTHH:MM:ss';
 
 /**
  * ISO date format used in the library.

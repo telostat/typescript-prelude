@@ -1,11 +1,5 @@
 import dayjs from 'dayjs';
-import { getLastWeekday, getPivotDate, getToday, isoFormatDate, PDateTime, PivotDate } from './-temporal';
-
-describe('PDateTime is dayjs', () => {
-  test('today is today', () => {
-    expect(PDateTime().format('YYYY-MM-DD')).toBe(new Date().toISOString().slice(0, 10));
-  });
-});
+import { getLastWeekday, getPivotDate, getToday, isoFormatDate, PivotDate } from './-temporal';
 
 describe('PivotDate queries', () => {
   const asofDjs = dayjs('2022-07-15');
