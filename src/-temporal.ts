@@ -46,7 +46,7 @@ export interface SDateRange {
 /**
  * ISO date/time format used in the library.
  */
-export const isoFormatDateTime = 'YYYY-MM-DDTHH:MM:SS';
+export const isoFormatDateTime = 'YYYY-MM-DDTHH:MM:ss';
 
 /**
  * ISO date format used in the library.
