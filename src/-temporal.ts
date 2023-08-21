@@ -25,9 +25,6 @@ dayjs.extend(relativeTime);
 dayjs.extend(timezone);
 dayjs.extend(utc);
 
-// TODO: Check how we can export Day.js type and functionality.
-export const PDateTime = dayjs;
-
 /**
  * Type alias for ISO-formatted date values as strings.
  */
