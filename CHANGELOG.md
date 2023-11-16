@@ -1,5 +1,21 @@
 # Changelog
 
+## [0.5.0](https://github.com/telostat/typescript-prelude/compare/v0.4.1...v0.5.0) (2023-11-16)
+
+
+### ⚠ BREAKING CHANGES
+
+* drop node 16 support
+
+### Features
+
+* add quarter dates to pivot dates ([a6f4d2f](https://github.com/telostat/typescript-prelude/commit/a6f4d2f25d9be217194eccf73f627e75541722c7))
+
+
+### Miscellaneous Chores
+
+* drop node 16 support ([43008f4](https://github.com/telostat/typescript-prelude/commit/43008f49e48dcf1e965e74c2f1a4eb2ab45f4309))
+
 ## [0.4.1](https://github.com/telostat/typescript-prelude/compare/v0.4.0...v0.4.1) (2023-08-21)
 
 
