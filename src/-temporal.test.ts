@@ -24,6 +24,10 @@ describe('PivotDate queries', () => {
     expect(getPivotDate(PivotDate.THIS_YEAR_END, asofStr)).toBe('2022-12-31');
     expect(getPivotDate(PivotDate.NEXT_YEAR_START, asofStr)).toBe('2023-01-01');
     expect(getPivotDate(PivotDate.NEXT_YEAR_END, asofStr)).toBe('2023-12-31');
+    expect(getPivotDate(PivotDate.THIS_QUARTER_START, asofStr)).toBe('2022-07-01');
+    expect(getPivotDate(PivotDate.THIS_QUARTER_END, asofStr)).toBe('2022-09-30');
+    expect(getPivotDate(PivotDate.LAST_QUARTER_START, asofStr)).toBe('2022-04-01');
+    expect(getPivotDate(PivotDate.LAST_QUARTER_END, asofStr)).toBe('2022-06-30');
   });
 
   test('over Dayjs values', () => {
@@ -45,6 +49,10 @@ describe('PivotDate queries', () => {
     expect(getPivotDate(PivotDate.THIS_YEAR_END, asofDjs)).toStrictEqual(dayjs('2022-12-31').endOf('day'));
     expect(getPivotDate(PivotDate.NEXT_YEAR_START, asofDjs)).toStrictEqual(dayjs('2023-01-01').endOf('day'));
     expect(getPivotDate(PivotDate.NEXT_YEAR_END, asofDjs)).toStrictEqual(dayjs('2023-12-31').endOf('day'));
+    expect(getPivotDate(PivotDate.THIS_QUARTER_START, asofDjs)).toStrictEqual(dayjs('2022-07-01').endOf('day'));
+    expect(getPivotDate(PivotDate.THIS_QUARTER_END, asofDjs)).toStrictEqual(dayjs('2022-09-30').endOf('day'));
+    expect(getPivotDate(PivotDate.LAST_QUARTER_START, asofDjs)).toStrictEqual(dayjs('2022-04-01').endOf('day'));
+    expect(getPivotDate(PivotDate.LAST_QUARTER_END, asofDjs)).toStrictEqual(dayjs('2022-06-30').endOf('day'));
   });
 
   test('over empty values', () => {

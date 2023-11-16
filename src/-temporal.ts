@@ -75,6 +75,10 @@ export enum PivotDate {
   THIS_YEAR_END = 'this year end',
   NEXT_YEAR_START = 'next year start',
   NEXT_YEAR_END = 'next year end',
+  THIS_QUARTER_START = 'this quarter start',
+  THIS_QUARTER_END = 'this quarter end',
+  LAST_QUARTER_START = 'last quarter start',
+  LAST_QUARTER_END = 'last quarter end',
 }
 
 /* Signature of getPivotDate specialized over Dayjs argument. */
@@ -150,6 +154,18 @@ export function getPivotDate(p: PivotDate, x?: Dayjs | SDate): Dayjs | SDate {
       break;
     case PivotDate.NEXT_YEAR_END:
       pivot = asof.add(1, 'year').endOf('year');
+      break;
+    case PivotDate.THIS_QUARTER_START:
+      pivot = asof.startOf('quarter');
+      break;
+    case PivotDate.THIS_QUARTER_END:
+      pivot = asof.endOf('quarter');
+      break;
+    case PivotDate.LAST_QUARTER_START:
+      pivot = asof.subtract(1, 'quarter').startOf('quarter');
+      break;
+    case PivotDate.LAST_QUARTER_END:
+      pivot = asof.subtract(1, 'quarter').endOf('quarter');
       break;
     default:
       throw Error('Unreachable case');
