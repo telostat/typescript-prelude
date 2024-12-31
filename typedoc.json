@@ -1,7 +1,11 @@
 {
   "out": "docs",
-  "entryPoints": ["./src"],
-  "exclude": "**/**/*+(.spec|.test).**",
+  "entryPoints": [
+    "./src"
+  ],
+  "exclude": [
+    "**/**/*+(.spec|.test).**"
+  ],
   "theme": "default",
   "includeVersion": true,
   "categorizeByGroup": true
