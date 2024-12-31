@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.0](https://github.com/telostat/typescript-prelude/compare/v0.5.0...v0.6.0) (2024-12-31)
+
+
+### Features
+
+* support node 22 ([618ec0a](https://github.com/telostat/typescript-prelude/commit/618ec0a8479ae4fdba77eaa5af0bc0242527590f))
+
 ## [0.5.0](https://github.com/telostat/typescript-prelude/compare/v0.4.1...v0.5.0) (2023-11-16)
 
 

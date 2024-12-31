@@ -1,6 +1,6 @@
 {
   "name": "@telostat/prelude",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "Experimental TypeScript Module as a Prelude",
   "author": "Telostat Pte Ltd",
   "license": "MIT",
