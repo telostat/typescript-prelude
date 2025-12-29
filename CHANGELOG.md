@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.7.0](https://github.com/telostat/typescript-prelude/compare/v0.6.0...v0.7.0) (2025-12-29)
+
+
+### ⚠ BREAKING CHANGES
+
+* **node:** Drop support for Node 18 and 20
+
+### Miscellaneous Chores
+
+* **node:** upgrade node version to 22 ([9db190c](https://github.com/telostat/typescript-prelude/commit/9db190cc8109f9d3ea12a74dc9da72bca49c9efd))
+
 ## [0.6.0](https://github.com/telostat/typescript-prelude/compare/v0.5.0...v0.6.0) (2024-12-31)
 
 
