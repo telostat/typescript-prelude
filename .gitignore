@@ -134,4 +134,6 @@ dist
 ## Ignore other build artifacts:
 /docs
 
+/.direnv
+
 # End of https://www.gitignore.io/api/node,macos,visualstudiocode
